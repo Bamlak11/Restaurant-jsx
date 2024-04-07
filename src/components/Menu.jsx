@@ -3,16 +3,16 @@ import MenuCard from './MenuCard';
 
 function Menu() {
   return (
-    <div>
-      <h1>Our Menu</h1>
+    <div className=" min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
+      <h1 className=" text-4xl font-semibold text-center pt-24 pb-10">Our Menu</h1>
 
-      <div>
-        <MenuCard img="https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Burger" price="$12.99"/>
-        <MenuCard img="" title="Burger" price="$12.99"/>
-        <MenuCard img="" title="Burger" price="$12.99"/>
-        <MenuCard img="" title="Burger" price="$12.99"/>
-        <MenuCard img="" title="Burger" price="$12.99"/>
-        <MenuCard img="" title="Burger" price="$12.99"/>
+      <div className=" flex flex-wrap gap-8 justify-center">
+        <MenuCard img="https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Steak" price="$15.99"/>
+        <MenuCard img="https://images.pexels.com/photos/17499948/pexels-photo-17499948/free-photo-of-top-view-of-spaghetti-pasta-with-tomato-sauce.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Pasta" price="$10.99"/>
+        <MenuCard img="https://cdn.pixabay.com/photo/2021/05/31/01/10/fried-rice-6297407_1280.jpg" title="Fried Rice" price="$14.99"/>
+        <MenuCard img="https://images.pexels.com/photos/7904958/pexels-photo-7904958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Tacos" price="$8.99"/>
+        <MenuCard img="https://images.pexels.com/photos/10296408/pexels-photo-10296408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Sushi" price="$7.99"/>
+        <MenuCard img="https://images.pexels.com/photos/12035555/pexels-photo-12035555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Cake" price="$2.99"/>
       </div>
     </div>
   )
