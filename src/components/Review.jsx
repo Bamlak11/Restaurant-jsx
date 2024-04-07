@@ -11,7 +11,7 @@ const Reviews = () => {
       </h1>
 
     <div className="flex flex-col md:flex-row gap-5 mt-5">
-      //review card that includes img, name , and their review
+      {/* review card that includes img, name , and their review */}
       <ReviewCard
         img="https://images.pexels.com/photos/5839957/pexels-photo-5839957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         name="John Doe"

@@ -11,7 +11,7 @@ const Footer = () => {
       </p>
     </div>
 
-//footer links
+{/* footer links */}
     <div>
       <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Links</h1>
       <nav className=" flex flex-col gap-2">

@@ -32,7 +32,7 @@ const Navbar = () => {
             </span>
             <h1 className=" hover:cursor-default">ExpressEats</h1>
           </div>
-          //my navbar links and cart button
+          {/* my navbar links and cart button */}
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
             <Link
               to="home"
@@ -89,7 +89,7 @@ const Navbar = () => {
             </div>
 
           </nav>
-            //for mobile view menu toggle
+            {/* for mobile view menu toggle */}
           <div className="md:hidden flex items-center hover:cursor-pointer">
             {menu ? (
               <AiOutlineClose size={25} onClick={closeMenu} />

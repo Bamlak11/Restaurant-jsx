@@ -4,7 +4,7 @@ import Button from './Button';
 import { useCart } from 'react-use-cart';
 
 const MenuCard = (props) => {
-  const { addItem } = useCart(); //start of my cart function
+  // const { addItem } = useCart(); start of my cart function
 
   const handleAddToCart = () => {
 
@@ -22,7 +22,8 @@ const MenuCard = (props) => {
       <div className=" space-y-4">
         <h3 className=" font-semibold text-center text-xl pt-6">{props.title}</h3>
         <div className=" flex flex-row justify-center">
-          <BsStarFill className=" text-red-400" /> // star rating for each food item
+        {/* star rating for each food item */}
+          <BsStarFill className=" text-red-400" /> 
           <BsStarFill className=" text-red-400" />
           <BsStarFill className=" text-red-400" />
           <BsStarFill className=" text-red-400" />
@@ -30,8 +31,8 @@ const MenuCard = (props) => {
         </div>
 
         <div className=" flex flex-row items-center justify-center gap-4">
-        <h3 className=" font-semibold text-lg">{props.price}</h3> //the price
-        <Button title="Add to Cart" onClick={handleAddToCart} /> //add to cart button
+        <h3 className=" font-semibold text-lg">{props.price}</h3> 
+        <Button title="Add to Cart" onClick={handleAddToCart} /> 
         </div>
       </div>
     </div>
