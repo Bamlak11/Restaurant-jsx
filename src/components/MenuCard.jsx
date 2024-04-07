@@ -1,8 +1,21 @@
 import React from 'react';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 import Button from './Button';
+import { useCart } from 'react-use-cart';
 
 const MenuCard = (props) => {
+  const { addItem } = useCart();
+
+  const handleAddToCart = () => {
+
+    addItem({
+      id: props.title, // You can use a unique identifier for the id
+      title: props.title,
+      price: props.price,
+      img: props.img
+    });
+  };
+
   return (
     <div className=" w-full lg:w-1/4 p-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg">
       <img className=" rounded-xl duration-300 hover:scale-105 " src={props.img} alt="image" />
@@ -18,7 +31,7 @@ const MenuCard = (props) => {
 
         <div className=" flex flex-row items-center justify-center gap-4">
         <h3 className=" font-semibold text-lg">{props.price}</h3>
-          <Button title="Buy Now" />
+        <Button title="Add to Cart" onClick={handleAddToCart} />
         </div>
       </div>
     </div>

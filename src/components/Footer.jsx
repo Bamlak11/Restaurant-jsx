@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -15,26 +16,26 @@ const Footer = () => {
       <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Links</h1>
       <nav className=" flex flex-col gap-2">
         <a
-          className=" hover:text-blue-400 transition-all cursor-pointer"
-          href="home"
+          className=" hover:text-orange-400 transition-all cursor-pointer"
+          href="#home"
         >
           Home
         </a>
         <a
-          className=" hover:text-blue-400 transition-all cursor-pointer"
-          href="menu"
+          className=" hover:text-orange-400 transition-all cursor-pointer"
+          href="#menu"
         >
           Menu
         </a>
         <a
-          className=" hover:text-blue-400 transition-all cursor-pointer"
-          href="about"
+          className=" hover:text-orange-400 transition-all cursor-pointer"
+          href="#about"
         >
          About
         </a>
         <a
-          className=" hover:text-blue-400 transition-all cursor-pointer"
-          href="reviews"
+          className=" hover:text-orange-400 transition-all cursor-pointer"
+          href="#reviews"
         >
           Reviews
         </a>
@@ -45,19 +46,19 @@ const Footer = () => {
       <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
       <nav className=" flex flex-col gap-2">
         <a
-          className=" hover:text-blue-400 transition-all cursor-pointer"
+          className=" hover:text-orange-400 transition-all cursor-pointer"
           href="/"
         >
           ExpressEats@email.com
         </a>
         <a
-          className=" hover:text-blue-400 transition-all cursor-pointer"
+          className=" hover:text-orange-400 transition-all cursor-pointer"
           href="/"
         >
           +1 123 456 7890
         </a>
         <a
-          className=" hover:text-blue-400 transition-all cursor-pointer"
+          className=" hover:text-orange-400 transition-all cursor-pointer"
           href="/"
         >
           Social media

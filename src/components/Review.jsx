@@ -4,7 +4,7 @@ import ReviewCard from './ReviewCard';
 const Reviews = () => {
   return (
 
-    <div className=" min-h-screen flex flex-col items-center justify-center md:px-32 px-5">
+    <div className=" min-h-screen flex flex-col items-center justify-center md:px-32 px-5 -mt-2">
        <h1 className=" text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10">
          Customer's Review
       </h1>

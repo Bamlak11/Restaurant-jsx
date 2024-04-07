@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import { Link } from 'react-scroll';
 
 const About = () => {
   return (
@@ -19,7 +20,15 @@ const About = () => {
         Join us today and experience the joy of delicious food, delivered in a flash!
         </p>
         <div className=" flex justify-center lg:justify-start">
-            <Button title="Learn More"/>
+        <Link
+            to="reviews"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="cursor-pointer"
+          >
+            <Button title="Reviews"/>
+            </Link>
         </div>
       </div>
     </div>
