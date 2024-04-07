@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 
 
 const Home = () => {
+  //hero section of website
   return (
     <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('https://images.playground.com/9361ff41cb154632a5b6c8d668b90b7a.jpeg')] bg-cover bg-no-repeat ">
       <div className='w-full lg:w-2/3 space-y-5 flex flex-col'>
@@ -22,7 +23,7 @@ const Home = () => {
             duration={500}
             className="cursor-pointer"
           >
-            <Button title="Order Now"/>
+            <Button title="Order Now"/> // links to the food menu
             </Link>
         </div>
       </div>

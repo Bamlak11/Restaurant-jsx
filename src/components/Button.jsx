@@ -1,5 +1,6 @@
 import React from "react";
 
+//button styling
 const Button = (props) => {
   return (
     <div>

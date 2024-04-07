@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 
 const About = () => {
   return (
+    //about section
     <div className="min-h-screen flex flex-col lg:flex-row justify-center items-center lg:px-32 px-5">
       <img className=' rounded-3xl mb-8 lg:mb-0 lg:mr-8' src="https://images.pexels.com/photos/5638730/pexels-photo-5638730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="About Image" width={700} />
 
@@ -27,7 +28,7 @@ const About = () => {
             duration={500}
             className="cursor-pointer"
           >
-            <Button title="Reviews"/>
+            <Button title="Reviews"/> //links to the reviews section of page
             </Link>
         </div>
       </div>

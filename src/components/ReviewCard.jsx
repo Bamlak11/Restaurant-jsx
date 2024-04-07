@@ -2,6 +2,7 @@ import React from 'react';
 
 const ReviewCard = ({ img, name, review }) => {
   return (
+    //review card styling
     <div className="w-full h-72 md:w-1/3 bg-white border-2 border-gray-400 md:border-none p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
       <div>
         <p className="text-gray-400">{review}</p>

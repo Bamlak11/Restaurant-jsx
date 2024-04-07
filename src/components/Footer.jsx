@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -12,6 +11,7 @@ const Footer = () => {
       </p>
     </div>
 
+//footer links
     <div>
       <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Links</h1>
       <nav className=" flex flex-col gap-2">

@@ -2,6 +2,7 @@ import React from 'react';
 import MenuCard from './MenuCard';
 import { useCart } from 'react-use-cart';
 
+//food menu section
 function Menu() {
   const { addItem } = useCart();
 
@@ -13,6 +14,7 @@ function Menu() {
     <div className=" min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
       <h1 className=" text-4xl font-semibold text-center pt-24 pb-10">Our Menu</h1>
 
+      //menu img, name , price, etc
       <div className=" flex flex-wrap gap-8 justify-center">
         <MenuCard img="https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Steak" price="$15.99" onAddToCart={() => handleAddToCart({ id: 'steak', title: 'Steak', price: 15.99 })}/>
         <MenuCard img="https://images.pexels.com/photos/17499948/pexels-photo-17499948/free-photo-of-top-view-of-spaghetti-pasta-with-tomato-sauce.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Pasta" price="$10.99" onAddToCart={() => handleAddToCart({ id: 'pasta', title: 'Pasta', price: 10.99 })}/>

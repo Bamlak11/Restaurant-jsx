@@ -1,3 +1,4 @@
+// components for each section of the page
 import React from 'react'
 import Navbar from "./components/Navbar";
 import Home from './components/Home';
@@ -7,6 +8,7 @@ import CustomerFavorite from './components/CustomerFavorite'
 import Review from './components/Review'
 import Footer from './components/Footer';
 
+// where the components will be displayed
 const App = () => {
   return (
     <div>

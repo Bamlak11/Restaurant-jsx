@@ -1,3 +1,4 @@
+// imported the things I needed fo the navbar
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import Button from "./Button";
@@ -8,8 +9,8 @@ import { BiRun } from "react-icons/bi";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
-  const [menu, setMenu] = useState(false);
-  const { items } = useCart(); 
+  const [menu, setMenu] = useState(false); //for my menu toggle
+  const { items } = useCart(); //attempt for the cart function
 
 
   const handleChange = () => {
@@ -31,6 +32,7 @@ const Navbar = () => {
             </span>
             <h1 className=" hover:cursor-default">ExpressEats</h1>
           </div>
+          //my navbar links and cart button
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
             <Link
               to="home"
@@ -87,7 +89,7 @@ const Navbar = () => {
             </div>
 
           </nav>
-
+            //for mobile view menu toggle
           <div className="md:hidden flex items-center hover:cursor-pointer">
             {menu ? (
               <AiOutlineClose size={25} onClick={closeMenu} />
