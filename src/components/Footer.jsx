@@ -1,28 +1,81 @@
 import React from 'react'
-import { BsFacebook } from "react-icons/bs";
-import { RiTwitterXFill } from "react-icons/ri";
-import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div>
-      <div>
-        <div>
-          <h1>ExpressEats</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-          <h1>Links</h1>
-            <nav>
-              <a className='' href="/">Menu</a>
-              <a className='' href="/">Favorites</a>
-              <a className='' href="/">About</a>
-              <a className='' href="/">Reviews</a>
-            </nav>
-        </div>
-      </div>
+  <div className=" bg-black text-white rounded-t-3xl mt-8 md:mt-0">
+  <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
+    <div className=" w-full md:w-1/4">
+      <h1 className=" font-semibold text-xl pb-4">ExpressEats</h1>
+      <p className=" text-sm">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
     </div>
-  )
-}
+
+    <div>
+      <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Links</h1>
+      <nav className=" flex flex-col gap-2">
+        <a
+          className=" hover:text-blue-400 transition-all cursor-pointer"
+          href="home"
+        >
+          Menu
+        </a>
+        <a
+          className=" hover:text-blue-400 transition-all cursor-pointer"
+          href="favorites"
+        >
+          Favorites
+        </a>
+        <a
+          className=" hover:text-blue-400 transition-all cursor-pointer"
+          href="about"
+        >
+         About
+        </a>
+        <a
+          className=" hover:text-blue-400 transition-all cursor-pointer"
+          href="reviews"
+        >
+          Reviews
+        </a>
+      </nav>
+    </div>
+
+    <div>
+      <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
+      <nav className=" flex flex-col gap-2">
+        <a
+          className=" hover:text-blue-400 transition-all cursor-pointer"
+          href="/"
+        >
+          ExpressEats@email.com
+        </a>
+        <a
+          className=" hover:text-blue-400 transition-all cursor-pointer"
+          href="/"
+        >
+          +1 123 456 7890
+        </a>
+        <a
+          className=" hover:text-blue-400 transition-all cursor-pointer"
+          href="/"
+        >
+          Social media
+        </a>
+      </nav>
+    </div>
+  </div>
+  <div>
+    <p>
+      <p className=" text-center py-4">
+        @copyright developed by
+        <span className=" text-blue-400"> B.H</span> |
+        All rights reserved
+      </p>
+    </p>
+  </div>
+</div>
+);
+};
 
 export default Footer
