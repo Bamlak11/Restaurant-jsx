@@ -9,11 +9,11 @@ const MenuCard = (props) => {
       <div className=" space-y-4">
         <h3 className=" font-semibold text-center text-xl pt-6">{props.title}</h3>
         <div className=" flex flex-row justify-center">
-          <BsStarFill className=" text-gray-400" />
-          <BsStarFill className=" text-gray-400" />
-          <BsStarFill className=" text-gray-400" />
-          <BsStarFill className=" text-gray-400" />
-          <BsStarHalf className=" text-gray-400" />
+          <BsStarFill className=" text-red-400" />
+          <BsStarFill className=" text-red-400" />
+          <BsStarFill className=" text-red-400" />
+          <BsStarFill className=" text-red-400" />
+          <BsStarHalf className=" text-red-400" />
         </div>
 
         <div className=" flex flex-row items-center justify-center gap-4">
