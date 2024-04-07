@@ -48,6 +48,16 @@ const Navbar = () => {
             </Link>
 
             <Link
+              to="favorites"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className=" hover:text-blue-400 transition-all cursor-pointer"
+            >
+              Favorites
+            </Link>
+
+            <Link
               to="about"
               spy={true}
               smooth={true}
@@ -92,6 +102,16 @@ const Navbar = () => {
               className=" hover:text-blue-400 transition-all cursor-pointer"
             >
               Home
+            </Link>
+
+            <Link
+              to="favorites"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className=" hover:text-blue-400 transition-all cursor-pointer"
+            >
+              Favorites
             </Link>
 
             <Link

@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Menu from './components/Menu'
 import About from './components/About';
 import CustomerFavorite from './components/CustomerFavorite'
+import Review from './components/Review'
 
 const App = () => {
   return (
@@ -19,12 +20,16 @@ const App = () => {
           <Menu/>
         </div>
 
-        <div>
+        <div id="">
           <CustomerFavorite/>
         </div>
 
         <div id="about">
           <About/>
+        </div>
+
+        <div id="reviews">
+          <Review/>
         </div>
 
       </main>
