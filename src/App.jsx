@@ -5,6 +5,7 @@ import Menu from './components/Menu'
 import About from './components/About';
 import CustomerFavorite from './components/CustomerFavorite'
 import Review from './components/Review'
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
           <Menu/>
         </div>
 
-        <div id="">
+        <div id="favorites">
           <CustomerFavorite/>
         </div>
 
@@ -30,6 +31,10 @@ const App = () => {
 
         <div id="reviews">
           <Review/>
+        </div>
+
+        <div>
+          <Footer/>
         </div>
 
       </main>
