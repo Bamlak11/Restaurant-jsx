@@ -9,15 +9,14 @@ const About = () => {
       <div className='space-y-4 lg:pt-14'>
         <h1 className=" font-semibold text-4xl text-center md:text-start">Why ExpressEats?</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          architecto quisquam delectus minima perferendis nulla quia nisi
-          laborum, exercitationem cum quo accusantium, impedit sed. Dicta, quo
-          molestias omnis reprehenderit quae animi?
+        Welcome to ExpressEats, where fast meets flavor! Our mission is simple: to provide you with mouthwatering meals delivered swiftly to your door.
+        From succulent steaks to tantalizing tacos, our menu offers a variety of options to satisfy every craving.
+
+
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi,
-          suscipit reiciendis accusamus recusandae eum aspernatur pariatur odit
-          veritatis facere. Magnam!
+        With ExpressEats, convenience and quality go hand in hand, making every dining experience a delight.
+        Join us today and experience the joy of delicious food, delivered in a flash!
         </p>
         <div className=" flex justify-center lg:justify-start">
             <Button title="Learn More"/>

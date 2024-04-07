@@ -7,7 +7,7 @@ const Footer = () => {
     <div className=" w-full md:w-1/4">
       <h1 className=" font-semibold text-xl pb-4">ExpressEats</h1>
       <p className=" text-sm">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Fast, Flavorful Delights!
       </p>
     </div>
 
@@ -18,13 +18,13 @@ const Footer = () => {
           className=" hover:text-blue-400 transition-all cursor-pointer"
           href="home"
         >
-          Menu
+          Home
         </a>
         <a
           className=" hover:text-blue-400 transition-all cursor-pointer"
-          href="favorites"
+          href="menu"
         >
-          Favorites
+          Menu
         </a>
         <a
           className=" hover:text-blue-400 transition-all cursor-pointer"
@@ -68,8 +68,7 @@ const Footer = () => {
   <div>
     <p>
       <p className=" text-center py-4">
-        @copyright developed by
-        <span className=" text-blue-400"> B.H</span> |
+        @copyright |
         All rights reserved
       </p>
     </p>

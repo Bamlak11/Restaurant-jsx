@@ -3,10 +3,12 @@ import { BiRestaurant } from "react-icons/bi";
 import { Link } from "react-scroll";
 import Button from "./Button";
 import { AiOutlineClose } from "react-icons/ai";
-import { AiOutlineMenuFold } from "react-icons/ai";
+import { TiThMenuOutline } from "react-icons/ti";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
+
 
   const handleChange = () => {
     setMenu(!menu);
@@ -14,6 +16,10 @@ const Navbar = () => {
 
   const closeMenu = () => {
     setMenu(false);
+  };
+
+  const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
   };
 
   return (
@@ -77,14 +83,17 @@ const Navbar = () => {
               Reviews
             </Link>
 
-            <Button title="Login" />
+            <div>
+              <Button title={`Cart (${cartItems.length})`} />
+            </div>
+
           </nav>
 
           <div className="md:hidden flex items-center">
             {menu ? (
-              <AiOutlineClose size={25} onClick={handleChange} />
+              <AiOutlineClose size={25} onClick={closeMenu} />
             ) : (
-              <AiOutlineMenuFold size={25} onClick={handleChange} />
+              <TiThMenuOutline size={25} onClick={handleChange} />
             )}
           </div>
         </div>
@@ -134,7 +143,9 @@ const Navbar = () => {
               Reviews
             </Link>
 
-            <Button title="login" />
+            <div>
+              <Button title={`Cart (${cartItems.length})`} />
+            </div>
         </div>
       </div>
     </div>
