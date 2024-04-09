@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from './components/Home';
 import Menu from './components/Menu'
 import About from './components/About';
-import CustomerFavorite from './components/CustomerFavorite'
+import Favorites from './components/Favorites'
 import Review from './components/Review'
 import Footer from './components/Footer';
 
@@ -24,7 +24,7 @@ const App = () => {
         </div>
 
         <div id="favorites">
-          <CustomerFavorite/>
+          <Favorites/>
         </div>
 
         <div id="about">

@@ -30,19 +30,18 @@ const Navbar = () => {
             <span className=" hover:cursor-default">
               <BiRun size={32} />
             </span>
-            <h1 className=" hover:cursor-default">ExpressEats</h1>
-          </div>
-          {/* my navbar links and cart button */}
-          <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
-            <Link
+            <h1 className=" hover:cursor-default"><Link
               to="home"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-orange-400 transition-all cursor-pointer"
+              className=" transition-all cursor-pointer"
             >
-              Home
-            </Link>
+              ExpressEats
+            </Link></h1>
+          </div>
+          {/* my navbar links and cart button */}
+          <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
 
             <Link
               to="menu"
@@ -89,6 +88,8 @@ const Navbar = () => {
             </div>
 
           </nav>
+
+          
             {/* for mobile view menu toggle */}
           <div className="md:hidden flex items-center hover:cursor-pointer">
             {menu ? (
@@ -106,24 +107,14 @@ const Navbar = () => {
           } lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
 
-            <Link
-              to="home"
+              <Link
+              to="menu"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-blue-400 transition-all cursor-pointer"
+              className=" hover:text-orange-400 transition-all cursor-pointer"
             >
-              Home
-            </Link>
-
-            <Link
-              to="favorites"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-blue-400 transition-all cursor-pointer"
-            >
-              Favorites
+              Menu
             </Link>
 
             <Link
@@ -131,7 +122,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-blue-400 transition-all cursor-pointer"
+              className=" hover:text-orange-400 transition-all cursor-pointer"
             >
               About
             </Link>
@@ -141,7 +132,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-blue-400 transition-all cursor-pointer"
+              className=" hover:text-orange-400 transition-all cursor-pointer"
             >
               Reviews
             </Link>
