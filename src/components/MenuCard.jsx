@@ -4,7 +4,7 @@ import Button from './Button';
 import { useCart } from 'react-use-cart';
 
 const MenuCard = (props) => {
-  // const { addItem } = useCart(); start of my cart function
+  const { addItem } = useCart();
 
   const handleAddToCart = () => {
 
